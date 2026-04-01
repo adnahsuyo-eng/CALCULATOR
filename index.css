@@ -4,11 +4,11 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-     background-color: rgb(251, 128, 192, .50);
+     background-color: rgba(251, 128, 192, .50);
 }
 #calculator{
     font-family: Arial, sans-serif;
-    background-color: rgb(251, 128, 192);
+    background-color: rgba(251, 128, 192);
     border-radius: 15px;
     max-width: 500px;
     overflow:hidden;
@@ -19,7 +19,7 @@ body{
     font-size: 3rem;
     text-align: left;
     border: none;
-   background-color: rgb(255, 207, 228);
+   background-color: rgb(255, 207, 228, 0.50);
    color: rgb(140, 9, 72);
 }
 #keys{
@@ -55,7 +55,6 @@ button:active{
 .operator-btn:active{
     background-color:rgba(235, 0, 141, 0.9);
 }
-/* Make DEL button span 2 columns in the grid */
 .delete-btn {
     grid-column: span 2; /* spans across 2 columns */
     height: 100px;       /* same height as other buttons */
