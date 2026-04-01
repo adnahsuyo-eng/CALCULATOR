@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     background-color: rgb(251, 128, 192, .50);
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: rgb(251, 128, 192);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow:hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+   background-color: rgb(255, 207, 228);
+   color: rgb(140, 9, 72);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+
+}
+button{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 207, 228, 0.50);
+    color: rgb(140, 9, 72);
+    font-size: 3rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(255, 255, 255, .70);
+}
+button:active{
+    background-color:rgb(255, 255, 255, .90);
+}
+.operator-btn{
+    background-color:rgba(235, 0, 141, 0.5);
+    color:rgb(241, 241, 241)
+}
+.operator-btn:hover{
+    background-color:rgba(235, 0, 141, 0.7);
+}
+.operator-btn:active{
+    background-color:rgba(235, 0, 141, 0.9);
+}
+/* Make DEL button span 2 columns in the grid */
+.delete-btn {
+    grid-column: span 2; /* spans across 2 columns */
+    height: 100px;       /* same height as other buttons */
+    border-radius: 50px; /* oval shape */
+}
+
+.delete-btn{
+    width: 100%;
+    height: 60%;
+    border-radius: 50px;
+    align-self: center;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: rgb(195, 0, 91, 0.5);
+}
+
+.delete-btn:hover{
+    background-color: rgba(195, 0, 91, 0.7);
+}
+.delete-btn:active{
+    background-color: rgba(195, 0, 91, 0.9);
+}
+
+
